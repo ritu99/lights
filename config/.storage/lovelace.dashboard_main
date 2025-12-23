@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_main",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entity",
+              "entity": "input_select.states"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "input_boolean.on_off"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "input_select.states"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "input_datetime.alarm"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

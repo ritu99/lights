@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"update.home_assistant_supervisor_update","state":"off","attributes":{"auto_update":true,"display_precision":0,"installed_version":"2025.12.3","in_progress":false,"latest_version":"2025.12.3","release_summary":null,"release_url":"https://github.com/home-assistant/supervisor/releases/tag/2025.12.3","skipped_version":null,"title":"Home Assistant Supervisor","update_percentage":null,"entity_picture":"https://brands.home-assistant.io/hassio/icon.png","friendly_name":"Home Assistant Supervisor Update","supported_features":1},"last_changed":"2025-12-23T01:27:17.392082+00:00","last_reported":"2025-12-23T01:27:17.392082+00:00","last_updated":"2025-12-23T01:27:17.392082+00:00","context":{"id":"01KD4D2NMGTJ9VCRXRJJKH9DYG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.home_assistant_core_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2025.7.4","in_progress":false,"latest_version":"2025.12.4","release_summary":null,"release_url":"https://www.home-assistant.io/latest-release-notes/","skipped_version":null,"title":"Home Assistant Core","update_percentage":null,"entity_picture":"https://brands.home-assistant.io/homeassistant/icon.png","friendly_name":"Home Assistant Core Update","supported_features":11},"last_changed":"2025-12-23T01:27:17.392987+00:00","last_reported":"2025-12-23T01:27:17.392987+00:00","last_updated":"2025-12-23T01:27:17.392987+00:00","context":{"id":"01KD4D2NMGT0M21K3F9YQ3QF1K","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.mosquitto_broker_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"6.4.0","in_progress":false,"latest_version":"6.5.2","release_summary":null,"release_url":null,"skipped_version":null,"title":"Mosquitto broker","update_percentage":null,"entity_picture":"/api/hassio/addons/core_mosquitto/icon","friendly_name":"Mosquitto broker Update","supported_features":25},"last_changed":"2025-12-23T01:27:17.393603+00:00","last_reported":"2025-12-23T01:27:17.393603+00:00","last_updated":"2025-12-23T01:27:17.393603+00:00","context":{"id":"01KD4D2NMHFDWS8XVSJYG7468D","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.zigbee2mqtt_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"1.36.0-1","in_progress":false,"latest_version":"2.7.0-1","release_summary":null,"release_url":null,"skipped_version":null,"title":"Zigbee2MQTT","update_percentage":null,"entity_picture":"/api/hassio/addons/45df7312_zigbee2mqtt/icon","friendly_name":"Zigbee2MQTT Update","supported_features":25},"last_changed":"2025-12-23T01:27:17.394082+00:00","last_reported":"2025-12-23T01:27:17.394082+00:00","last_updated":"2025-12-23T01:27:17.394082+00:00","context":{"id":"01KD4D2NMJCQZN3NVXPMWZ9BY8","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.terminal_ssh_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"9.10.0","in_progress":false,"latest_version":"9.20.1","release_summary":null,"release_url":null,"skipped_version":null,"title":"Terminal & SSH","update_percentage":null,"entity_picture":"/api/hassio/addons/core_ssh/icon","friendly_name":"Terminal & SSH Update","supported_features":25},"last_changed":"2025-12-23T01:27:17.394517+00:00","last_reported":"2025-12-23T01:27:17.394517+00:00","last_updated":"2025-12-23T01:27:17.394517+00:00","context":{"id":"01KD4D2NMJ2WTMQSNF8S3Y4KGE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.home_assistant_operating_system_update","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"15.2","in_progress":false,"latest_version":"16.3","release_summary":null,"release_url":"https://github.com/home-assistant/operating-system/releases/tag/16.3","skipped_version":null,"title":"Home Assistant Operating System","update_percentage":null,"entity_picture":"https://brands.home-assistant.io/homeassistant/icon.png","friendly_name":"Home Assistant Operating System Update","supported_features":11},"last_changed":"2025-12-23T01:27:17.395095+00:00","last_reported":"2025-12-23T01:27:17.395095+00:00","last_updated":"2025-12-23T01:27:17.395095+00:00","context":{"id":"01KD4D2NMKMMMS2PF4V86QFBE9","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-12-23T01:27:21.411400+00:00","last_reported":"2025-12-23T01:27:21.411400+00:00","last_updated":"2025-12-23T01:27:21.411400+00:00","context":{"id":"01KD4D2SJ38SEH8WWVBSXG602K","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2025-12-23T01:27:21.662241+00:00","last_reported":"2025-12-23T01:27:21.662241+00:00","last_updated":"2025-12-23T01:27:21.662241+00:00","context":{"id":"01KD4D2SSYJ95CKMM4RXQYDAH9","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"scene.relax","state":"2025-12-19T16:53:34.507619+00:00","attributes":{"entity_id":["light.hanging","light.kallax","light.bedside"],"id":"1679448406950","friendly_name":"Relax"},"last_changed":"2025-12-23T01:27:22.431033+00:00","last_reported":"2025-12-23T01:27:22.431033+00:00","last_updated":"2025-12-23T01:27:22.431033+00:00","context":{"id":"01KD4D2THZYJ82BH2G8GDNJTAQ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"scene.work","state":"2025-12-19T17:00:00.441783+00:00","attributes":{"entity_id":["light.hanging","light.kallax","light.bedside"],"id":"1679448643468","icon":"mdi:briefcase","friendly_name":"Work"},"last_changed":"2025-12-23T01:27:22.434211+00:00","last_reported":"2025-12-23T01:27:22.434211+00:00","last_updated":"2025-12-23T01:27:22.434211+00:00","context":{"id":"01KD4D2TJ2F12CBW5VAJMQ84B9","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"scene.off","state":"2025-12-23T01:00:00.235723+00:00","attributes":{"entity_id":["light.all"],"id":"1679448767559","friendly_name":"Off"},"last_changed":"2025-12-23T01:27:22.434903+00:00","last_reported":"2025-12-23T01:27:22.434903+00:00","last_updated":"2025-12-23T01:27:22.434903+00:00","context":{"id":"01KD4D2TJ27P5DWV84HWDWRTM1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"scene.wind_down","state":"2025-12-21T09:16:32.902328+00:00","attributes":{"entity_id":["light.hanging","light.kallax","light.bedside"],"id":"1679464690611","icon":"mdi:bed-empty","friendly_name":"wind down"},"last_changed":"2025-12-23T01:27:22.435492+00:00","last_reported":"2025-12-23T01:27:22.435492+00:00","last_updated":"2025-12-23T01:27:22.435492+00:00","context":{"id":"01KD4D2TJ3AP9YKS2TAZ83KXZR","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"script.on_based_on_time_of_day","state":"off","attributes":{"last_triggered":"2024-12-17T06:44:17.542521+00:00","mode":"single","current":0,"icon":"mdi:bulkhead-light","friendly_name":"on (based on time of day)"},"last_changed":"2025-12-23T01:27:22.454336+00:00","last_reported":"2025-12-23T01:27:22.454336+00:00","last_updated":"2025-12-23T01:27:22.454336+00:00","context":{"id":"01KD4D2TJP9B8SS9R2BZ10YR2S","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"script.state_change","state":"off","attributes":{"last_triggered":null,"mode":"single","current":0,"friendly_name":"state change"},"last_changed":"2025-12-23T01:27:22.454647+00:00","last_reported":"2025-12-23T01:27:22.454647+00:00","last_updated":"2025-12-23T01:27:22.454647+00:00","context":{"id":"01KD4D2TJP26CEKYK96EPCE0N6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"person.ritvik","state":"oakwood","attributes":{"editable":true,"id":"ritvik","device_trackers":["device_tracker.pixel_9_pro"],"latitude":37.7609852,"longitude":-122.4253402,"gps_accuracy":11,"source":"device_tracker.pixel_9_pro","user_id":"c873a97b10af4251941467113b0c0a06","friendly_name":"ritvik"},"last_changed":"2025-12-23T01:27:22.474897+00:00","last_reported":"2025-12-23T01:46:25.392486+00:00","last_updated":"2025-12-23T01:46:25.392486+00:00","context":{"id":"01KD4E5PQGWJ9MMKH81XZQD3FY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"person.guest","state":"unknown","attributes":{"editable":true,"id":"guest","device_trackers":["device_tracker.ayush"],"user_id":"90b67cdd12fa438fa25e1d0b69522a42","friendly_name":"guest"},"last_changed":"2025-12-23T01:27:22.475209+00:00","last_reported":"2025-12-23T01:27:25.611822+00:00","last_updated":"2025-12-23T01:27:25.611822+00:00","context":{"id":"01KD4D2XNBM063YVTS3HQGB9S0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.on_off","state":"off","attributes":{"editable":true,"icon":"mdi:toggle-switch","friendly_name":"on/off"},"last_changed":"2025-12-23T01:27:22.476376+00:00","last_reported":"2025-12-23T01:27:22.476376+00:00","last_updated":"2025-12-23T01:27:22.476376+00:00","context":{"id":"01KD4D2TKCT4YJD1ERKRT6F2W8","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.trigger_lights_for_alarm","state":"off","attributes":{"editable":true,"icon":"mdi:alarm-light-outline","friendly_name":"Trigger lights for alarm"},"last_changed":"2025-12-23T01:27:22.476602+00:00","last_reported":"2025-12-23T01:27:22.476602+00:00","last_updated":"2025-12-23T01:27:22.476602+00:00","context":{"id":"01KD4D2TKCFYQ0NAD0BTTKDGMT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"input_select.states","state":"relax","attributes":{"options":["wind down","relax","work"],"editable":true,"icon":"mdi:bulkhead-light","friendly_name":"States"},"last_changed":"2025-12-23T01:27:22.480869+00:00","last_reported":"2025-12-23T01:27:22.480869+00:00","last_updated":"2025-12-23T01:27:22.480869+00:00","context":{"id":"01KD4D2TKGVHNMTYBT9CQQGYNH","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"input_datetime.alarm","state":"11:30:00","attributes":{"has_date":false,"has_time":true,"editable":true,"hour":11,"minute":30,"second":0,"timestamp":41400,"icon":"mdi:alarm-light","friendly_name":"alarm"},"last_changed":"2025-12-23T01:40:58.285799+00:00","last_reported":"2025-12-23T01:40:58.285799+00:00","last_updated":"2025-12-23T01:40:58.285799+00:00","context":{"id":"01KD4DVQ93Q9AB2501E428M40Y","parent_id":"01KD4DVQ92Z14TE8KTPMA2BRD4","user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"device_tracker.ayush","state":"unknown","attributes":{"source_type":"gps","friendly_name":"Ayush"},"last_changed":"2025-12-23T01:27:24.751856+00:00","last_reported":"2025-12-23T01:27:24.751856+00:00","last_updated":"2025-12-23T01:27:24.751856+00:00","context":{"id":"01KD4D2WTFACN2974ZD4JRFSJN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ayush_battery_level","state":"80","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-charging-80","friendly_name":"Ayush Battery level"},"last_changed":"2025-12-23T01:27:24.753643+00:00","last_reported":"2025-12-23T01:27:24.753643+00:00","last_updated":"2025-12-23T01:27:24.753643+00:00","context":{"id":"01KD4D2WTHMSN3TR6W3TXES9M6","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": 80,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ayush_battery_state","state":"charging","attributes":{"options":["charging","discharging","full","not_charging"],"device_class":"enum","icon":"mdi:battery-plus","friendly_name":"Ayush Battery state"},"last_changed":"2025-12-23T01:27:24.754175+00:00","last_reported":"2025-12-23T01:27:24.754175+00:00","last_updated":"2025-12-23T01:27:24.754175+00:00","context":{"id":"01KD4D2WTJ52EGZ9V7KHM6KXXB","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ayush_charger_type","state":"ac","attributes":{"options":["ac","usb","wireless","dock","none"],"device_class":"enum","icon":"mdi:power-plug","friendly_name":"Ayush Charger type"},"last_changed":"2025-12-23T01:27:24.754630+00:00","last_reported":"2025-12-23T01:27:24.754630+00:00","last_updated":"2025-12-23T01:27:24.754630+00:00","context":{"id":"01KD4D2WTJNYSJSY3XGTHC08C0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "ac",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"device_tracker.pixel_9_pro","state":"oakwood","attributes":{"source_type":"gps","latitude":37.7609852,"longitude":-122.4253402,"gps_accuracy":11,"altitude":-12.0,"course":0,"speed":0,"vertical_accuracy":1,"friendly_name":"Pixel 9 Pro"},"last_changed":"2025-12-23T01:46:25.391624+00:00","last_reported":"2025-12-23T01:46:25.391624+00:00","last_updated":"2025-12-23T01:46:25.391624+00:00","context":{"id":"01KD4E5PQFWCZBQYASA3S6EPRN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pixel_9_pro_battery_level","state":"52","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-50","friendly_name":"Pixel 9 Pro Battery level"},"last_changed":"2025-12-23T01:40:58.273922+00:00","last_reported":"2025-12-23T01:40:58.273922+00:00","last_updated":"2025-12-23T01:40:58.273922+00:00","context":{"id":"01KD4DVQ91PNF7P1J6EF4TQFBA","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": 52,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pixel_9_pro_battery_state","state":"discharging","attributes":{"options":["charging","discharging","full","not_charging"],"device_class":"enum","icon":"mdi:battery-minus","friendly_name":"Pixel 9 Pro Battery state"},"last_changed":"2025-12-23T01:27:24.758812+00:00","last_reported":"2025-12-23T01:27:24.758812+00:00","last_updated":"2025-12-23T01:27:24.758812+00:00","context":{"id":"01KD4D2WTPDEFTRNGX34ET0HGJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pixel_9_pro_charger_type","state":"none","attributes":{"options":["ac","usb","wireless","dock","none"],"device_class":"enum","icon":"mdi:battery","friendly_name":"Pixel 9 Pro Charger type"},"last_changed":"2025-12-23T01:27:24.759215+00:00","last_reported":"2025-12-23T01:27:24.759215+00:00","last_updated":"2025-12-23T01:27:24.759215+00:00","context":{"id":"01KD4D2WTQY1816D92N1N3Y01Z","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.pixel_9_pro_next_alarm","state":"2025-12-23T19:30:00+00:00","attributes":{"Local Time":"Tue Dec 23 11:30:00 PST 2025","Package":"com.google.android.deskclock","Time in Milliseconds":1766518200000,"device_class":"timestamp","icon":"mdi:alarm","friendly_name":"Pixel 9 Pro Next alarm"},"last_changed":"2025-12-23T01:40:58.274866+00:00","last_reported":"2025-12-23T01:40:58.274866+00:00","last_updated":"2025-12-23T01:40:58.274866+00:00","context":{"id":"01KD4DVQ92Z14TE8KTPMA2BRD4","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'datetime.datetime'>",
+          "isoformat": "2025-12-23T19:30:00+00:00"
+        },
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.alarm","state":"on","attributes":{"id":"1679638931664","last_triggered":"2025-11-30T19:55:00.366994+00:00","mode":"single","current":0,"friendly_name":"Alarm"},"last_changed":"2025-12-23T01:27:25.578643+00:00","last_reported":"2025-12-23T01:27:25.578643+00:00","last_updated":"2025-12-23T01:27:25.578643+00:00","context":{"id":"01KD4D2XMA6QA1ESX49JQ991HV","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.off","state":"on","attributes":{"id":"1721720452299","last_triggered":"2025-12-21T09:28:02.768804+00:00","mode":"single","current":0,"friendly_name":"off button"},"last_changed":"2025-12-23T01:27:25.578995+00:00","last_reported":"2025-12-23T01:27:25.578995+00:00","last_updated":"2025-12-23T01:27:25.578995+00:00","context":{"id":"01KD4D2XMACYDKZSMDQQR34CNA","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.on","state":"on","attributes":{"id":"1721720563069","last_triggered":"2025-12-21T09:16:32.896707+00:00","mode":"single","current":0,"friendly_name":"on button"},"last_changed":"2025-12-23T01:27:25.579246+00:00","last_reported":"2025-12-23T01:27:25.579246+00:00","last_updated":"2025-12-23T01:27:25.579246+00:00","context":{"id":"01KD4D2XMBVA4AAP8E10F20E0M","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.weekday_work_hours","state":"on","attributes":{"id":"weekday_work_hours","last_triggered":"2025-12-22T17:00:00.429278+00:00","mode":"single","current":0,"friendly_name":"weekday_work_hours"},"last_changed":"2025-12-23T01:27:25.579512+00:00","last_reported":"2025-12-23T01:27:25.579512+00:00","last_updated":"2025-12-23T01:27:25.579512+00:00","context":{"id":"01KD4D2XMBTFPG2KHBTY6YB0K6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.weekdays_relax","state":"on","attributes":{"id":"weekday_morning_relax","last_triggered":"2025-12-22T16:00:00.411773+00:00","mode":"single","current":0,"friendly_name":"weekdays_relax"},"last_changed":"2025-12-23T01:27:25.579763+00:00","last_reported":"2025-12-23T01:27:25.579763+00:00","last_updated":"2025-12-23T01:27:25.579763+00:00","context":{"id":"01KD4D2XMBNSY5B8C4T8FFZ4PJ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.everyday_relax","state":"on","attributes":{"id":"evening_relax","last_triggered":"2025-12-23T01:00:00.228855+00:00","mode":"single","current":0,"friendly_name":"everyday_relax"},"last_changed":"2025-12-23T01:27:25.579993+00:00","last_reported":"2025-12-23T01:27:25.579993+00:00","last_updated":"2025-12-23T01:27:25.579993+00:00","context":{"id":"01KD4D2XMBNGK8V9F2ZQWJDRVG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.everyday_wind_down","state":"on","attributes":{"id":"night_wind_down","last_triggered":"2025-12-22T06:00:00.122804+00:00","mode":"single","current":0,"friendly_name":"everyday_wind_down"},"last_changed":"2025-12-23T01:27:25.580213+00:00","last_reported":"2025-12-23T01:27:25.580213+00:00","last_updated":"2025-12-23T01:27:25.580213+00:00","context":{"id":"01KD4D2XMCETTA96WQ90C31X2N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.weekend_relax","state":"on","attributes":{"id":"weekend_relax_hours","last_triggered":"2025-12-21T17:00:00.185360+00:00","mode":"single","current":0,"friendly_name":"weekend_relax"},"last_changed":"2025-12-23T01:27:25.580429+00:00","last_reported":"2025-12-23T01:27:25.580429+00:00","last_updated":"2025-12-23T01:27:25.580429+00:00","context":{"id":"01KD4D2XMC0Y6WYPZKENYQNKX5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.on_2","state":"on","attributes":{"id":"1734424773862","last_triggered":"2025-12-23T01:00:00.232351+00:00","mode":"single","current":0,"friendly_name":"on"},"last_changed":"2025-12-23T01:27:25.580664+00:00","last_reported":"2025-12-23T01:27:25.580664+00:00","last_updated":"2025-12-23T01:27:25.580664+00:00","context":{"id":"01KD4D2XMC1PHVQQASCC4DGMWY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.set_alarm","state":"on","attributes":{"id":"1754269633040","last_triggered":"2025-12-23T01:40:58.276288+00:00","mode":"single","current":0,"friendly_name":"Set or Clear Alarm Helper from Phone"},"last_changed":"2025-12-23T01:27:25.580965+00:00","last_reported":"2025-12-23T01:40:58.286265+00:00","last_updated":"2025-12-23T01:40:58.286265+00:00","context":{"id":"01KD4DVQ93Q9AB2501E428M40Y","parent_id":"01KD4DVQ92Z14TE8KTPMA2BRD4","user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.zigbee2mqtt_bridge_connection_state","state":"on","attributes":{"device_class":"connectivity","friendly_name":"Zigbee2MQTT Bridge Connection state"},"last_changed":"2025-12-23T01:27:33.458356+00:00","last_reported":"2025-12-23T01:27:33.458356+00:00","last_updated":"2025-12-23T01:27:33.458356+00:00","context":{"id":"01KD4D35AJRGTSZAFB07DXED88","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"button.zigbee2mqtt_bridge_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"Zigbee2MQTT Bridge Restart"},"last_changed":"2025-12-23T01:27:33.461741+00:00","last_reported":"2025-12-23T01:27:33.461741+00:00","last_updated":"2025-12-23T01:27:33.461741+00:00","context":{"id":"01KD4D35AN37NCJ9F5ZDT9C88S","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"light.kallax","state":"on","attributes":{"min_color_temp_kelvin":2202,"max_color_temp_kelvin":6535,"min_mireds":153,"max_mireds":454,"effect_list":["blink","breathe","okay","channel_change","candle","finish_effect","stop_effect","stop_hue_effect"],"supported_color_modes":["color_temp"],"effect":null,"color_mode":"color_temp","brightness":216,"color_temp_kelvin":3115,"color_temp":321,"hs_color":[27.646,53.858],"rgb_color":[255,181,118],"xy_color":[0.485,0.381],"friendly_name":"kallax","supported_features":44},"last_changed":"2025-12-23T01:27:44.500134+00:00","last_reported":"2025-12-23T01:27:44.500134+00:00","last_updated":"2025-12-23T01:27:44.500134+00:00","context":{"id":"01KD4D3G3MPWC46H2RHW63KN7W","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"light.hanging","state":"on","attributes":{"min_color_temp_kelvin":2202,"max_color_temp_kelvin":6535,"min_mireds":153,"max_mireds":454,"effect_list":["blink","breathe","okay","channel_change","candle","finish_effect","stop_effect","stop_hue_effect"],"supported_color_modes":["color_temp"],"effect":null,"color_mode":"color_temp","brightness":217,"color_temp_kelvin":3105,"color_temp":322,"hs_color":[27.661,54.116],"rgb_color":[255,181,117],"xy_color":[0.486,0.382],"friendly_name":"hanging","supported_features":44},"last_changed":"2025-12-23T01:27:44.515348+00:00","last_reported":"2025-12-23T01:27:44.515348+00:00","last_updated":"2025-12-23T01:27:44.515348+00:00","context":{"id":"01KD4D3G433P5J8VP5VZ9H7B1Q","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"light.all","state":"on","attributes":{"min_color_temp_kelvin":2202,"max_color_temp_kelvin":6535,"min_mireds":153,"max_mireds":454,"effect_list":["blink","breathe","okay","channel_change","candle","finish_effect","stop_effect","stop_hue_effect"],"supported_color_modes":["color_temp"],"effect":null,"color_mode":"color_temp","brightness":216,"color_temp_kelvin":3115,"color_temp":321,"hs_color":[27.646,53.858],"rgb_color":[255,181,118],"xy_color":[0.485,0.381],"friendly_name":"all","supported_features":44},"last_changed":"2025-12-23T01:27:44.527699+00:00","last_reported":"2025-12-23T01:27:44.527699+00:00","last_updated":"2025-12-23T01:27:44.527699+00:00","context":{"id":"01KD4D3G4FDJ9YX3YPE1ZSTBQQ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"light.bedside","state":"on","attributes":{"effect_list":["blink","breathe","okay","channel_change","candle","finish_effect","stop_effect","stop_hue_effect"],"supported_color_modes":["brightness"],"effect":null,"color_mode":"brightness","brightness":255,"friendly_name":"bedside","supported_features":44},"last_changed":"2025-12-23T01:27:44.518627+00:00","last_reported":"2025-12-23T01:27:44.518627+00:00","last_updated":"2025-12-23T01:27:44.518627+00:00","context":{"id":"01KD4D3G467PJJMAJV03DCZ329","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"scene.all_1_work","state":"unknown","attributes":{"friendly_name":"all Work"},"last_changed":"2025-12-23T01:27:33.459411+00:00","last_reported":"2025-12-23T01:27:33.459411+00:00","last_updated":"2025-12-23T01:27:33.459411+00:00","context":{"id":"01KD4D35AKB3JZM6P0SVWCJJCJ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"select.kallax_power_on_behavior","state":"toggle","attributes":{"options":["off","on","toggle","previous"],"icon":"mdi:power-settings","friendly_name":"kallax Power-on behavior"},"last_changed":"2025-12-23T01:27:44.500357+00:00","last_reported":"2025-12-23T01:27:44.500357+00:00","last_updated":"2025-12-23T01:27:44.500357+00:00","context":{"id":"01KD4D3G3M9A1Z0GEJJ8VANCTE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"select.hanging_power_on_behavior","state":"toggle","attributes":{"options":["off","on","toggle","previous"],"icon":"mdi:power-settings","friendly_name":"hanging Power-on behavior"},"last_changed":"2025-12-23T01:27:44.515522+00:00","last_reported":"2025-12-23T01:27:44.515522+00:00","last_updated":"2025-12-23T01:27:44.515522+00:00","context":{"id":"01KD4D3G43J36AHZ40B431S3XS","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"select.bedside_power_on_behavior","state":"unknown","attributes":{"options":["off","on","toggle","previous"],"icon":"mdi:power-settings","friendly_name":"bedside Power-on behavior"},"last_changed":"2025-12-23T01:27:33.459222+00:00","last_reported":"2025-12-23T01:27:44.423615+00:00","last_updated":"2025-12-23T01:27:33.459222+00:00","context":{"id":"01KD4D35AKP9MSBGYB4ZH25Q02","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"select.zigbee2mqtt_bridge_log_level","state":"info","attributes":{"options":["info","warn","error","debug"],"friendly_name":"Zigbee2MQTT Bridge Log level"},"last_changed":"2025-12-23T01:27:33.505669+00:00","last_reported":"2025-12-23T01:27:33.505669+00:00","last_updated":"2025-12-23T01:27:33.505669+00:00","context":{"id":"01KD4D35C10E05JE5BGASF3BVM","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee2mqtt_bridge_version","state":"1.36.0","attributes":{"icon":"mdi:zigbee","friendly_name":"Zigbee2MQTT Bridge Version"},"last_changed":"2025-12-23T01:27:33.506069+00:00","last_reported":"2025-12-23T01:27:33.506069+00:00","last_updated":"2025-12-23T01:27:33.506069+00:00","context":{"id":"01KD4D35C2CNCKSNJ07E0AGGYZ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1.36.0",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee2mqtt_bridge_permit_join_timeout","state":"unknown","attributes":{"unit_of_measurement":"s","device_class":"duration","friendly_name":"Zigbee2MQTT Bridge Permit join timeout"},"last_changed":"2025-12-23T01:27:33.459929+00:00","last_reported":"2025-12-23T01:27:33.459929+00:00","last_updated":"2025-12-23T01:27:33.459929+00:00","context":{"id":"01KD4D35AK7JMSQ8C28GX788B1","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "s"
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.remote_1_battery","state":"100","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"remote 1 Battery"},"last_changed":"2025-12-23T01:27:44.523591+00:00","last_reported":"2025-12-23T01:27:44.523591+00:00","last_updated":"2025-12-23T01:27:44.523591+00:00","context":{"id":"01KD4D3G4B40X7QB8ST1YZZ23H","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.remote_1_action","state":"unknown","attributes":{"icon":"mdi:gesture-double-tap","friendly_name":"remote 1 Action"},"last_changed":"2025-12-23T01:27:33.472633+00:00","last_reported":"2025-12-23T01:27:33.472633+00:00","last_updated":"2025-12-23T01:27:33.472633+00:00","context":{"id":"01KD4D35B0K7QFC8YGWHPNP3XX","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.bed_battery","state":"unknown","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"bed Battery"},"last_changed":"2025-12-23T01:27:33.461632+00:00","last_reported":"2025-12-23T01:27:33.461632+00:00","last_updated":"2025-12-23T01:27:33.461632+00:00","context":{"id":"01KD4D35ANK9MB3NSDPWX980KE","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.bed_action","state":"unknown","attributes":{"icon":"mdi:gesture-double-tap","friendly_name":"bed Action"},"last_changed":"2025-12-23T01:27:33.461512+00:00","last_reported":"2025-12-23T01:27:33.461512+00:00","last_updated":"2025-12-23T01:27:33.461512+00:00","context":{"id":"01KD4D35ANW176JK454A5QDM9D","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.zigbee2mqtt_bridge_permit_join","state":"off","attributes":{"icon":"mdi:human-greeting-proximity","friendly_name":"Zigbee2MQTT Bridge Permit join"},"last_changed":"2025-12-23T01:27:33.505953+00:00","last_reported":"2025-12-23T01:27:33.505953+00:00","last_updated":"2025-12-23T01:27:33.505953+00:00","context":{"id":"01KD4D35C1H18K0K9F6DN4HVWF","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.kallax","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"16786690","in_progress":false,"latest_version":"16787202","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"kallax","supported_features":5},"last_changed":"2025-12-23T01:27:44.501308+00:00","last_reported":"2025-12-23T01:27:44.501308+00:00","last_updated":"2025-12-23T01:27:44.501308+00:00","context":{"id":"01KD4D3G3N0AFEYFG0ZTHXQB12","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.hanging","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"16786690","in_progress":false,"latest_version":"16787202","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"hanging","supported_features":5},"last_changed":"2025-12-23T01:27:44.514801+00:00","last_reported":"2025-12-23T01:27:44.514801+00:00","last_updated":"2025-12-23T01:27:44.514801+00:00","context":{"id":"01KD4D3G42B7V3E37QG671R01G","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.bedside","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"16786690","in_progress":false,"latest_version":"16787202","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"bedside","supported_features":5},"last_changed":"2025-12-23T01:27:44.518096+00:00","last_reported":"2025-12-23T01:27:44.518096+00:00","last_updated":"2025-12-23T01:27:44.518096+00:00","context":{"id":"01KD4D3G46JFRT5GCHV4BEKCE1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.remote_1","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"65572","in_progress":false,"latest_version":"33816598","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"remote 1","supported_features":5},"last_changed":"2025-12-23T01:27:44.523404+00:00","last_reported":"2025-12-23T01:27:44.523404+00:00","last_updated":"2025-12-23T01:27:44.523404+00:00","context":{"id":"01KD4D3G4BP4JJDJ8YEYWMP9EM","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"update.bed","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"65572","in_progress":false,"latest_version":"33816598","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"remote 2","supported_features":5},"last_changed":"2025-12-23T01:27:44.526256+00:00","last_reported":"2025-12-23T01:27:44.526256+00:00","last_updated":"2025-12-23T01:27:44.526256+00:00","context":{"id":"01KD4D3G4E9THPMVCNZ7RSB8SV","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-23T01:57:25.610702+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x94b216fffeb50df8_battery","state":"unknown","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"0x94b216fffeb50df8 Battery"},"last_changed":"2025-12-23T01:27:33.459800+00:00","last_reported":"2025-12-23T01:27:33.459800+00:00","last_updated":"2025-12-23T01:27:33.459800+00:00","context":{"id":"01KD4D35AKP8D87VT08VENEGH1","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-23T01:27:44.530954+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x94b216fffeb50df8_action","state":"unknown","attributes":{"icon":"mdi:gesture-double-tap","friendly_name":"0x94b216fffeb50df8 Action"},"last_changed":"2025-12-23T01:27:33.459076+00:00","last_reported":"2025-12-23T01:27:33.459076+00:00","last_updated":"2025-12-23T01:27:33.459076+00:00","context":{"id":"01KD4D35AK5J3WD5848XFA7V8A","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-23T01:27:44.543572+00:00"
+    }
+  ]
+}

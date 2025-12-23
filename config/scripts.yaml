@@ -1,0 +1,111 @@
+on_based_on_time_of_day:
+  alias: on (based on time of day)
+  sequence:
+  - if:
+    - condition: time
+      after: 09:00:00
+      before: '18:00:00'
+    then:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.work
+      metadata: {}
+  - if:
+    - condition: time
+      after: 07:00:00
+      before: 09:00:00
+    then:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.relax
+      metadata: {}
+  - if:
+    - condition: time
+      after: '17:00:00'
+      before: '22:45:00'
+    then:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.relax
+      metadata: {}
+  - if:
+    - condition: time
+      after: '22:45:00'
+      before: 07:00:00
+    then:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.wind_down
+      metadata: {}
+  mode: single
+  icon: mdi:bulkhead-light
+state_change:
+  alias: state change
+  sequence:
+  - choose:
+    - conditions:
+      - condition: time
+        after: 09:00:00
+        before: '17:00:00'
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      sequence:
+      - service: input_select.select_option
+        target:
+          entity_id: input_select.states
+        data:
+          option: work
+    - conditions:
+      - condition: time
+        after: 08:00:00
+        before: 09:00:00
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      sequence:
+      - service: input_select.select_option
+        target:
+          entity_id: input_select.states
+        data:
+          option: relax
+    - conditions:
+      - condition: time
+        after: '17:00:00'
+        before: '22:00:00'
+      sequence:
+      - service: input_select.select_option
+        target:
+          entity_id: input_select.states
+        data:
+          option: relax
+    - conditions:
+      - condition: time
+        after: '22:00:00'
+        before: 08:00:00
+      sequence:
+      - service: input_select.select_option
+        target:
+          entity_id: input_select.states
+        data:
+          option: wind down
+    - conditions:
+      - condition: time
+        after: 09:00:00
+        before: '17:00:00'
+        weekday:
+        - sat
+        - sun
+      sequence:
+      - service: input_select.select_option
+        target:
+          entity_id: input_select.states
+        data:
+          option: relax
+  mode: single

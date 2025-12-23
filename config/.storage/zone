@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "zone",
+  "data": {
+    "items": [
+      {
+        "id": "oakwood",
+        "latitude": 37.7610114,
+        "longitude": -122.4252853,
+        "name": "oakwood",
+        "icon": "mdi:map-marker",
+        "passive": false,
+        "radius": 50.0
+      }
+    ]
+  }
+}

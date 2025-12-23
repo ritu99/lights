@@ -1,0 +1,35 @@
+# Environment and secrets
+.env
+config/secrets.yaml
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+*.log.*
+*.log.fault
+
+# Home Assistant runtime
+config/deps/
+config/tts/
+config/.cloud/
+
+# Zigbee2mqtt runtime data
+config/zigbee2mqtt/log/
+config/zigbee2mqtt/state.json
+
+# Storage - sensitive files
+config/.storage/auth
+config/.storage/auth_provider.homeassistant
+config/.storage/http.auth
+config/.storage/core.uuid
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,242 @@
+- id: '1679638931664'
+  alias: Alarm
+  description: ''
+  triggers:
+  - at:
+      entity_id: input_datetime.alarm
+      offset: -00:05:00
+    trigger: time
+  conditions:
+  - condition: state
+    entity_id: input_boolean.trigger_lights_for_alarm
+    state: 'on'
+  actions:
+  - data:
+      brightness_pct: 1
+    target:
+      device_id: 4630cb0e0c198c9ef72e654ae6815a4e
+    action: light.turn_on
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - data:
+      brightness_pct: 100
+      transition: 300
+    target:
+      device_id: 4630cb0e0c198c9ef72e654ae6815a4e
+    action: light.turn_on
+  - delay:
+      hours: 0
+      minutes: 25
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 4630cb0e0c198c9ef72e654ae6815a4e
+    entity_id: light.all
+    domain: light
+  mode: single
+- id: '1721720452299'
+  alias: off button
+  description: ''
+  triggers:
+  - domain: mqtt
+    device_id: 830765b3feb95abfc62c10ab7e9a701d
+    type: action
+    subtype: 'off'
+    trigger: device
+  - domain: mqtt
+    device_id: 4241fcfa80c0c8098fbc91d54a28ee53
+    type: action
+    subtype: 'off'
+    trigger: device
+  conditions: []
+  actions:
+  - metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.on_off
+    action: input_boolean.turn_off
+  mode: single
+- id: '1721720563069'
+  alias: on button
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 830765b3feb95abfc62c10ab7e9a701d
+    type: action
+    subtype: 'on'
+  - platform: device
+    domain: mqtt
+    device_id: 4241fcfa80c0c8098fbc91d54a28ee53
+    type: action
+    subtype: 'on'
+  condition: []
+  action:
+  - service: input_boolean.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.on_off
+  mode: single
+- id: weekday_work_hours
+  alias: weekday_work_hours
+  description: Changes state to work during weekdays from 9am to 5pm.
+  trigger:
+  - platform: time
+    at: 09:00:00
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.states
+    data:
+      option: work
+  mode: single
+- id: weekday_morning_relax
+  alias: weekdays_relax
+  description: Changes state to relax on weekdays from 8am to 9am.
+  trigger:
+  - platform: time
+    at: 08:00:00
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.states
+    data:
+      option: relax
+  mode: single
+- id: evening_relax
+  alias: everyday_relax
+  description: Changes state to relax every day from 5pm to 10pm.
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.states
+    data:
+      option: relax
+  mode: single
+- id: night_wind_down
+  alias: everyday_wind_down
+  description: Changes state to wind down every day from 10pm to 8am.
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.states
+    data:
+      option: wind down
+  mode: single
+- id: weekend_relax_hours
+  alias: weekend_relax
+  description: Changes state to relax on weekends from 9am to 5pm.
+  trigger:
+  - platform: time
+    at: 09:00:00
+  condition:
+  - condition: time
+    weekday:
+    - sat
+    - sun
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.states
+    data:
+      option: relax
+  mode: single
+- id: '1734424773862'
+  alias: 'on'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.on_off
+  - platform: state
+    entity_id:
+    - input_select.states
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: input_boolean.on_off
+      state: 'on'
+    then:
+    - choose:
+      - conditions:
+        - condition: state
+          entity_id: input_select.states
+          state: work
+        sequence:
+        - service: scene.turn_on
+          metadata: {}
+          target:
+            entity_id: scene.work
+      - conditions:
+        - condition: state
+          entity_id: input_select.states
+          state: relax
+        sequence:
+        - service: scene.turn_on
+          metadata: {}
+          target:
+            entity_id: scene.relax
+      - conditions:
+        - condition: state
+          entity_id: input_select.states
+          state: wind down
+        sequence:
+        - service: scene.turn_on
+          metadata: {}
+          target:
+            entity_id: scene.wind_down
+    else:
+    - service: scene.turn_on
+      data: {}
+      target:
+        entity_id: scene.off
+  mode: single
+- id: '1754269633040'
+  alias: Set or Clear Alarm Helper from Phone
+  description: Updates an input_datetime based on the phone's next alarm, handling
+    all possible states.
+  triggers:
+  - entity_id: sensor.pixel_9_pro_next_alarm
+    trigger: state
+  conditions: []
+  actions:
+  - target:
+      entity_id: input_datetime.alarm
+    data:
+      datetime: "{# Step 1: Try to convert the sensor's state into a real datetime
+        object.\n            If it fails for any reason, create a variable 'dt' with
+        a value of 'None'. #}\n{% set dt = as_datetime(trigger.to_state.state, default=None)
+        %}\n{# Step 2: Check if the conversion in Step 1 was successful. #} {% if
+        dt is not none %}\n\n  {# Step 3a: If successful, convert the valid datetime
+        object to our local timezone. #}\n  {{ as_local(dt) }}\n\n{% else %}\n\n  {#
+        Step 3b: If it failed, set the datetime to the past. #}\n  1970-01-01T00:00:00+00:00\n{%
+        endif %}"
+    action: input_datetime.set_datetime
+  mode: single

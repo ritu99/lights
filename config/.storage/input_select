@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "input_select",
+  "data": {
+    "items": [
+      {
+        "id": "states",
+        "name": "States",
+        "icon": "mdi:bulkhead-light",
+        "options": [
+          "wind down",
+          "relax",
+          "work"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "ritvik",
+        "user_id": "c873a97b10af4251941467113b0c0a06",
+        "device_trackers": [
+          "device_tracker.pixel_9_pro"
+        ],
+        "id": "ritvik"
+      },
+      {
+        "name": "guest",
+        "device_trackers": [
+          "device_tracker.ayush"
+        ],
+        "user_id": "90b67cdd12fa438fa25e1d0b69522a42",
+        "picture": null,
+        "id": "guest"
+      }
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+- id: '1679448406950'
+  name: Relax
+  entities:
+    light.hanging:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: hanging
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 217
+      color_temp_kelvin: 3105
+      color_temp: 322
+      hs_color:
+      - 27.661
+      - 54.116
+      rgb_color:
+      - 255
+      - 180
+      - 117
+      xy_color:
+      - 0.487
+      - 0.381
+      state: 'on'
+    light.kallax:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: kallax
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 216
+      color_temp_kelvin: 3115
+      color_temp: 321
+      hs_color:
+      - 27.646
+      - 53.858
+      rgb_color:
+      - 255
+      - 180
+      - 117
+      xy_color:
+      - 0.487
+      - 0.381
+      state: 'on'
+    light.bedside:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: bedside
+      supported_features: 44
+      color_mode: brightness
+      brightness: 255
+      state: 'on'
+  metadata: {}
+- id: '1679448643468'
+  name: Work
+  entities:
+    light.hanging:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: hanging
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 5025
+      color_temp: 199
+      hs_color:
+      - 27.028
+      - 18.905
+      rgb_color:
+      - 255
+      - 228
+      - 206
+      xy_color:
+      - 0.371
+      - 0.349
+      state: 'on'
+    light.kallax:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: kallax
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 5000
+      color_temp: 200
+      hs_color:
+      - 27.001
+      - 19.243
+      rgb_color:
+      - 255
+      - 228
+      - 205
+      xy_color:
+      - 0.372
+      - 0.35
+      state: 'on'
+    light.bedside:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: bedside
+      supported_features: 44
+      color_mode: brightness
+      brightness: 255
+      state: 'on'
+  metadata: {}
+  icon: mdi:briefcase
+- id: '1679448767559'
+  name: 'Off'
+  entities:
+    light.all:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: all
+      supported_features: 44
+      state: 'off'
+  metadata: {}
+- id: '1679464690611'
+  name: wind down
+  entities:
+    light.hanging:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: hanging
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 120
+      color_temp_kelvin: 2710
+      color_temp: 369
+      hs_color:
+      - 28.373
+      - 65.405
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      state: 'on'
+    light.kallax:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: kallax
+      supported_features: 44
+      color_mode: color_temp
+      brightness: 51
+      color_temp_kelvin: 2638
+      color_temp: 379
+      hs_color:
+      - 28.534
+      - 67.741
+      rgb_color:
+      - 255
+      - 164
+      - 82
+      xy_color:
+      - 0.532
+      - 0.388
+      state: 'on'
+    light.bedside:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      friendly_name: bedside
+      supported_features: 44
+      color_mode: brightness
+      brightness: 99
+      state: 'on'
+  icon: mdi:bed-empty
+  metadata: {}
