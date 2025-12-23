@@ -81,6 +81,56 @@
     target:
       entity_id: input_boolean.on_off
   mode: single
+- id: arrow_left
+  alias: cycle mode left
+  description: Cycle to previous mode and turn on lights
+  triggers:
+  - domain: mqtt
+    device_id: 830765b3feb95abfc62c10ab7e9a701d
+    type: action
+    subtype: arrow_left_click
+    trigger: device
+  - domain: mqtt
+    device_id: 4241fcfa80c0c8098fbc91d54a28ee53
+    type: action
+    subtype: arrow_left_click
+    trigger: device
+  conditions: []
+  actions:
+  - action: input_select.select_previous
+    target:
+      entity_id: input_select.states
+    data:
+      cycle: true
+  - action: input_boolean.turn_on
+    target:
+      entity_id: input_boolean.on_off
+  mode: single
+- id: arrow_right
+  alias: cycle mode right
+  description: Cycle to next mode and turn on lights
+  triggers:
+  - domain: mqtt
+    device_id: 830765b3feb95abfc62c10ab7e9a701d
+    type: action
+    subtype: arrow_right_click
+    trigger: device
+  - domain: mqtt
+    device_id: 4241fcfa80c0c8098fbc91d54a28ee53
+    type: action
+    subtype: arrow_right_click
+    trigger: device
+  conditions: []
+  actions:
+  - action: input_select.select_next
+    target:
+      entity_id: input_select.states
+    data:
+      cycle: true
+  - action: input_boolean.turn_on
+    target:
+      entity_id: input_boolean.on_off
+  mode: single
 - id: weekday_work_hours
   alias: weekday_work_hours
   description: Changes state to work during weekdays from 9am to 5pm.
