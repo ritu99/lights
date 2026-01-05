@@ -1,41 +1,90 @@
 - id: '1679638931664'
   alias: Alarm
-  description: ''
+  description: Circadian sunrise wake-up sequence
   triggers:
   - at:
       entity_id: input_datetime.alarm
-      offset: -00:05:00
+      offset: -00:20:00
     trigger: time
   conditions:
   - condition: state
     entity_id: input_boolean.trigger_lights_for_alarm
     state: 'on'
   actions:
-  - data:
+  # Stage 1: -20 min - First light, very dim and warm (dawn)
+  - action: light.turn_on
+    target:
+      entity_id:
+      - light.hanging
+      - light.kallax
+    data:
       brightness_pct: 1
+      kelvin: 2200
+  - action: light.turn_on
     target:
-      device_id: 4630cb0e0c198c9ef72e654ae6815a4e
-    action: light.turn_on
+      entity_id: light.bedside
+    data:
+      brightness_pct: 1
+  # Stage 2: -15 min - Gentle warm glow
   - delay:
-      hours: 0
-      minutes: 0
-      seconds: 1
-      milliseconds: 0
-  - data:
+      minutes: 5
+  - action: light.turn_on
+    target:
+      entity_id:
+      - light.hanging
+      - light.kallax
+    data:
+      brightness_pct: 15
+      kelvin: 2500
+      transition: 60
+  - action: light.turn_on
+    target:
+      entity_id: light.bedside
+    data:
+      brightness_pct: 15
+      transition: 60
+  # Stage 3: -11 min - Golden hour
+  - delay:
+      minutes: 4
+  - action: light.turn_on
+    target:
+      entity_id:
+      - light.hanging
+      - light.kallax
+    data:
+      brightness_pct: 40
+      kelvin: 3200
+      transition: 60
+  - action: light.turn_on
+    target:
+      entity_id: light.bedside
+    data:
+      brightness_pct: 40
+      transition: 60
+  # Stage 4: -7 min - Full daylight (melatonin suppression)
+  - delay:
+      minutes: 4
+  - action: light.turn_on
+    target:
+      entity_id:
+      - light.hanging
+      - light.kallax
+    data:
       brightness_pct: 100
-      transition: 300
+      kelvin: 5500
+      transition: 120
+  - action: light.turn_on
     target:
-      device_id: 4630cb0e0c198c9ef72e654ae6815a4e
-    action: light.turn_on
+      entity_id: light.bedside
+    data:
+      brightness_pct: 100
+      transition: 120
+  # Turn off 30 min after alarm
   - delay:
-      hours: 0
-      minutes: 25
-      seconds: 0
-      milliseconds: 0
-  - type: turn_off
-    device_id: 4630cb0e0c198c9ef72e654ae6815a4e
-    entity_id: light.all
-    domain: light
+      minutes: 37
+  - action: light.turn_off
+    target:
+      entity_id: light.all
   mode: single
 - id: '1721720452299'
   alias: off button
